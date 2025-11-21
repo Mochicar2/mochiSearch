@@ -8,8 +8,8 @@ class Database {
 
     //metodo para establecer la conexion
     public function conectar() {
-        if (!file_exists($this->ruta)) {
-            die("Error: No se encontró la base de datos en: " . $this->ruta);
+        if (!file_exists($this->ruta)) {                                        // ver si el archivo existe en la ruta DIR
+            die("Error: No se encontró la base de datos en: " . $this->ruta); //die() detiene inmediatamente la ejecución del script.
         }
 
         try {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MochiSearch - Buscador de Becarios BECAL </title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <header>
+        <h1>MochiSearch</h1>
+        <p>Buscador de Becarios BECAL</p>
+    </header>
+
+    <section id="filtros">
+        <input type="text" id="nombre" placeholder="Nombre o Apellido" />
+        <select id="departamento"></select>
+        <select id="tipo_beca"></select>
+        <select id="pais"></select>
+        <button id="buscarBtn">Buscar</button>
+    </section>
+
+    <section id="resultados">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Sexo</th>
+                    <th>Departamento</th>
+                    <th>Tipo de Beca</th>
+                    <th>Área Ciencia</th>
+                    <th>SubÁrea Ciencia</th>
+                    <th>Programa Estudio</th>
+                    <th>Universidad</th>
+                    <th>País Destino</th>
+                    <th>Ciudad Destino</th>
+                    <th>CVPY</th>
+                </tr>
+            </thead>
+            <tbody id="tablaResultados"></tbody>
+        </table>
+    </section>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
+
